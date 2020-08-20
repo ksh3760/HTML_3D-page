@@ -27,22 +27,22 @@
 }
 
 .wrapper > .page:nth-child(1){
-    background-image: url("이미지 넣기");
+    background-image: url('img01.png');
     background-size: cover;
 }
 
 .wrapper > .page:nth-child(2){
-    background-image: url("이미지 넣기");
+    background-image: url('img02.png');
     background-size: cover;
 }
 
 .wrapper > .page:nth-child(3){
-    background-image: url("이미지 넣기");
+    background-image: url("img03.png");
     background-size: cover;
 }
 
 .wrapper > .page:nth-child(4){
-    background-image: url("이미지 넣기");
+    background-image: url("img04.png");
     background-size: cover;
 }
 
