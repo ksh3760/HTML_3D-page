@@ -7,14 +7,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
     <link rel="stylesheet" href="style.css">
     <link rel="script" href="main.js">
+    <script src="main.js"></script>
 </head>
 <body>
     <header>
         <h1>Desktop Style 3D Page</h1>
     </header>
     <div class="container">
-        <div class="weapper">
-            <div class="page">
+		<div class="wrapper" style="touch-action: pan-y; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); transform: translateZ(-693px) rotateY(0deg);">
+			<div class="page" style="transform: rotateY(0deg) translateZ(693px);">
                 <h1>page1</h1>
                 <ul class="icons">
                     <li><a href="#"><i class="fa fa-home fa-3x"></i></a></li>
@@ -24,7 +25,7 @@
                     <li><a href="#"><i class="fa fa-film fa-3x"></i></a></li>
                 </ul>
             </div>
-            <div class="page">
+			<div class="page" style="transform: rotateY(90deg) translateZ(693px);">
                 <h1>page2</h1>
                 <ul class="icons">
                     <li><a href="#"><i class="fa fa-home fa-3x"></i></a></li>
@@ -34,7 +35,7 @@
                     <li><a href="#"><i class="fa fa-film fa-3x"></i></a></li>
                 </ul>
             </div>
-            <div class="page">
+			<div class="page" style="transform: rotateY(180deg) translateZ(693px);">
                 <h1>page3</h1>
                 <ul class="icons">
                     <li><a href="#"><i class="fa fa-home fa-3x"></i></a></li>
@@ -44,7 +45,7 @@
                     <li><a href="#"><i class="fa fa-film fa-3x"></i></a></li>
                 </ul>
             </div>
-            <div class="page">
+			<div class="page" style="transform: rotateY(270deg) translateZ(693px);">
                 <h1>page4</h1>
                 <ul class="icons">
                     <li><a href="#"><i class="fa fa-home fa-3x"></i></a></li>
@@ -55,7 +56,10 @@
                 </ul>
             </div>
         </div>
-    </div><!-- end container -->
-    <ul id="indicator"></ul>
+    </div>end container
+	<ul id="indicator">
+        <li class="active">1</li><li>2</li><li>3</li><li>4</li></ul>
+
+        <script src="./Page 3D_files/main.js.다운로드"></script>       
 </body>
 </html>

@@ -30,6 +30,7 @@ function init_indicator(){
     for(var i = 0 ; i < indicator_length ; i++){
         indicator.innerHTML += '<li>' + (i+1) + '</li>';
     }
+    
     indicator_li = indicator.querySelectorAll('li');
     change_page(indicator_num);
 }
@@ -47,9 +48,12 @@ function change_page(inum){
     indicator_li[inum - 1].setAttribute('class', 'active');
 }
 
+// ---------------------------------------------------------------
+
 init_page();
 init_indicator();
 
+// 이벤트 리스너
 for(var i = 0 ; i < indicator_li.length ; i++){
     indicator_li[i].addEventListener('click', function(){
         indicator_num = parseInt(this.innerText);
@@ -85,4 +89,4 @@ hammer.on('swiperight', function(e){
 // 창 크기 변경 시 페이지 초기화
 window.onresize = function(){
     init_page();
-}
+} 
